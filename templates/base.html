@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename ='css/style.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='isologo.png') }}">
+    <title>Esrocrea {% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    <form class="MainMenu">
+        <ul>
+            <li><a class="boton" href="#">Dulces</a></li>
+            <li><a class="boton" href="#">Ofertas</a></li>
+            <li><a class="boton" href="#">Contacto</a></li>
+        </ul>
+    </div>
+    
+    </form>
+    <a class="logo"><img src="static/1.png"/></a>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
