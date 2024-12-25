@@ -53,12 +53,6 @@ li a:hover {
 }
 
 @media (max-width: 600px) {
-  .MainMenu {
-  }
-
-  ul {
-  }
-
   li {
     padding: 80px;
   }
@@ -67,6 +61,13 @@ li a:hover {
     display: grid;
     place-items: center;
     border: none;
+  }
+
+  img {
+    border-radius: 18px;
+    padding: 10px;
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -86,4 +87,13 @@ img {
   max-width: 100%;
   height: auto;
   border: none;
+}
+
+footer {
+  text-align: center;
+  font-size: larger;
+  font-family: DancingScript-Regular;
+  background-color: rgb(241, 203, 226);
+  border-radius: 18px;
+  padding: 5px;
 }
