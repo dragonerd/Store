@@ -1,99 +1,89 @@
 /* ================= GENERAL SETTINGS ======================= */
 
 @font-face {
-    font-family: DancingScript-Regular;
-    src: url("/static/DancingScript-Regular.ttf");
+  font-family: DancingScript-Regular;
+  src: url("/static/DancingScript-Regular.ttf");
 }
 
 /* ================= KEYFRAMES EFFECTS ======================= */
 
 @keyframes aparecer {
-    0% { opacity: 0.1; } /* Keyframe inicial (0%) */
-    100% { opacity: 1.2; } /* Keyframe final (100%) */
-  }
-
-
-
-body{
-    background-color: #ffb0bf;
+  0% {
+    opacity: 0.1;
+  } /* Keyframe inicial (0%) */
+  100% {
+    opacity: 1.2;
+  } /* Keyframe final (100%) */
 }
 
-ul{
-    font-family: DancingScript-Regular;
-    list-style-type: none;
-
+body {
+  background-color: #ffb0bf;
 }
 
-li{
-    display: inline;
-  
+ul {
+  font-family: DancingScript-Regular;
+  list-style-type: none;
+}
+
+li {
+  display: inline;
 }
 
 li a:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    animation: aparecer 0.9s ease-in-out; /* Animación */
-
-  }
-.boton
-{
-    border: none;
-    padding: 10px;
-    margin: 10px;
-    cursor:pointer;
-    border-color: white;
-    text-decoration: none;
-    box-shadow: none;
-    color: black; 
-    font-size: 40px;
-    border-radius: 30px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  animation: aparecer 0.9s ease-in-out; /* Animación */
+}
+.boton {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-color: white;
+  text-decoration: none;
+  box-shadow: none;
+  color: black;
+  font-size: 40px;
+  border-radius: 30px;
 }
 
-.logo
-{
-display: grid;
-place-items: center;
-max-width: 100%;
-  height: auto;
-}
-
-
-.MainMenu
-{
-display: grid;
-place-items: center;
+.MainMenu {
+  display: grid;
+  place-items: center;
 }
 
 @media (max-width: 600px) {
-    .MainMenu {
-    
-        };
+  .MainMenu {
+  }
 
-    ul
-        {
-         
-        };
+  ul {
+  }
 
-    li
-    {
-        padding: 80px;
-    }
+  li {
+    padding: 80px;
+  }
 
-    
+  #logo {
+    display: grid;
+    place-items: center;
+    border: none;
+  }
+}
 
-    .logo
-    {
-        display: grid;
-        place-items: center;
-    }
-    }
+.Galeria {
+  text-align: center;
+  margin: 5px;
+}
 
+img {
+  border-radius: 18px;
+  padding: 10px;
+}
 
-.Galeria
-{
-
-    text-align: center;
-    margin: 5px;
-    width: 180px;
-
+.logo {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  height: auto;
+  border: none;
 }
